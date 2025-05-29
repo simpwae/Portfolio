@@ -1,10 +1,11 @@
 import React, { useEffect, useRef } from 'react';
 import { gsap } from 'gsap';
+import { useNavigate } from 'react-router-dom';
 
 const Home = () => {
   const sectionRef = useRef(null);
   const imageRef = useRef(null);
-
+ const navigate = useNavigate();
   useEffect(() => {
     gsap.fromTo(
       sectionRef.current,
@@ -17,7 +18,9 @@ const Home = () => {
       { opacity: 1, x: 0, duration: 1, ease: 'power2.out', delay: 0.3 }
     );
   }, []);
-
+   let handleButtonClick = () => {
+    navigate('/contact');
+  }
   return (
     <section ref={sectionRef} className="min-h-screen flex items-center justify-center px-4">
       <div className="container mx-auto text-center">
@@ -39,9 +42,9 @@ const Home = () => {
           <br />
           {'}'};
         </p>
-        <a href="/contact" className="inline-block bg-orange-400 text-gray-900 px-6 py-2 rounded hover:bg-orange-500 transition">
+        <button onClick={handleButtonClick} href="/contact" className="inline-block bg-orange-400 text-gray-900 px-6 py-2 rounded hover:bg-orange-500 transition">
           Get in Touch
-        </a>
+        </button>
       </div>
     </section>
   );
