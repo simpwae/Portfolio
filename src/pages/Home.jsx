@@ -23,7 +23,7 @@ const Home = () => {
       <div className="container mx-auto text-center">
         <img
           ref={imageRef}
-          src="/images/profile.jpg" // Replace with your image path or URL
+          src="/images/profile.webp" // Replace with your image path or URL
           alt="Naqash Amjad"
           className="w-32 h-32 md:w-48 md:h-48 rounded-full mx-auto mb-6 border-4 border-orange-400 object-cover filter drop-shadow-lg"
         />
