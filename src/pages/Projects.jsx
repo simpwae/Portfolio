@@ -1,5 +1,5 @@
-import React, { useEffect, useRef } from 'react';
-import { gsap } from 'gsap';
+import React, { useEffect, useRef } from "react";
+import { gsap } from "gsap";
 
 const Projects = () => {
   const sectionRef = useRef(null);
@@ -8,7 +8,7 @@ const Projects = () => {
     gsap.fromTo(
       sectionRef.current,
       { opacity: 0, y: 50 },
-      { opacity: 1, y: 0, duration: 1, ease: 'power2.out' }
+      { opacity: 1, y: 0, duration: 1, ease: "power2.out" }
     );
   }, []);
 
@@ -19,10 +19,13 @@ const Projects = () => {
         <div className="text-gray-300 space-y-8">
           <div>
             <h3 className="text-xl text-blue-400">TransPak Import Services</h3>
-            <p>A web application built with JavaScript, React, Firebase, and Material UI</p>
+            <p>
+              A web application built with JavaScript, React, Firebase, and
+              Material UI
+            </p>
             <p>Final Year Project (2024)</p>
             <p>
-              <span className="text-blue-400">Link:</span>{' '}
+              <span className="text-blue-400">Link:</span>{" "}
               <a
                 href="https://final-year-project-ed293.web.app/"
                 target="_blank"
@@ -35,10 +38,13 @@ const Projects = () => {
           </div>
           <div>
             <h3 className="text-xl text-blue-400">Restaurant App</h3>
-            <p>A responsive web application for restaurant services, built with HTML, CSS, and JavaScript</p>
+            <p>
+              A responsive web application for restaurant services, built with
+              HTML, CSS, and JavaScript
+            </p>
             <p>Personal Project (2025)</p>
             <p>
-              <span className="text-blue-400">Link:</span>{' '}
+              <span className="text-blue-400">Link:</span>{" "}
               <a
                 href="https://simpwae.github.io/resturent__boot/"
                 target="_blank"
@@ -46,6 +52,27 @@ const Projects = () => {
                 className="text-yellow-400 hover:text-orange-400 transition"
               >
                 simpwae.github.io/resturent__boot
+              </a>
+            </p>
+          </div>
+          <div>
+            <h3 className="text-xl text-blue-400">
+              Stallion Wear E-commerce app
+            </h3>
+            <p>
+              A responsive web application for e-commerce, built with React ,
+              Redux, Nodejs, Express, MongoDB.
+            </p>
+            <p>Personal Project (2025)</p>
+            <p>
+              <span className="text-blue-400">Link:</span>{" "}
+              <a
+                href="https://stallionwear.vercel.app/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-yellow-400 hover:text-orange-400 transition"
+              >
+                https://stallionwear.vercel.app/
               </a>
             </p>
           </div>

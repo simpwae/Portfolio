@@ -1,6 +1,5 @@
 @import "tailwindcss";
-@tailwind base;
-@tailwind components;
+
 @tailwind utilities;
 
 body {
@@ -53,4 +52,16 @@ h3 {
   .text-3xl {
     font-size: 1.5rem;
   }
+}
+::-webkit-scrollbar {
+  width: 10px;
+  background-color: #2d3748;
+  color: #ed8936;
+}
+::-webkit-scrollbar-thumb {
+  background-color: #ed8936;
+  border-radius: 10px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background-color: #f6ad55;
 }
